@@ -35,9 +35,9 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Cyrax/.m2/repository/org/springframework/spring-context/4.3.13.RELEASE/spring-context-4.3.13.RELEASE.jar" sourcepath="C:/Users/Cyrax/.m2/repository/org/springframework/spring-context/4.3.13.RELEASE/spring-context-4.3.13.RELEASE-sources.jar">
 		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Cyrax/.m2/repository/org/springframework/spring-context/4.3.13.RELEASE/spring-context-4.3.13.RELEASE-javadoc.jar!/"/>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="org.eclipse.jst.component.archivename" value="spring-context-4.3.13.RELEASE.jar"/>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/Cyrax/.m2/repository/org/springframework/spring-context/4.3.13.RELEASE/spring-context-4.3.13.RELEASE-javadoc.jar!/"/>
 			<attribute name="maven.groupId" value="org.springframework"/>
 			<attribute name="maven.artifactId" value="spring-context"/>
 			<attribute name="maven.version" value="4.3.13.RELEASE"/>
@@ -46,9 +46,9 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Cyrax/.m2/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar" sourcepath="C:/Users/Cyrax/.m2/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE-sources.jar">
 		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Cyrax/.m2/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE-javadoc.jar!/"/>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="org.eclipse.jst.component.archivename" value="spring-web-4.3.13.RELEASE.jar"/>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/Cyrax/.m2/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE-javadoc.jar!/"/>
 			<attribute name="maven.groupId" value="org.springframework"/>
 			<attribute name="maven.artifactId" value="spring-web"/>
 			<attribute name="maven.version" value="4.3.13.RELEASE"/>
@@ -64,5 +64,6 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_152"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

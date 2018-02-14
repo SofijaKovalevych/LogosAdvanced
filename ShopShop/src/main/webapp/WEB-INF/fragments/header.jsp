@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="/">Logo</a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
@@ -11,8 +11,8 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li><a href="#"> Register</a></li>
+        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="/register"> Register</a></li>
       </ul>
     </div>
   </div>
