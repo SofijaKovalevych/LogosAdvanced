@@ -4,10 +4,13 @@ import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 import ua.shop.entity.Items;
@@ -15,6 +18,7 @@ import ua.shop.service.ItemsService;
 
 @Controller
 @RequestMapping("/admin/itemForm")
+@SessionAttributes("item")
 public class ItemController {
 	
 	@Autowired
@@ -26,16 +30,24 @@ public class ItemController {
 	}
 	
 	@GetMapping
-	public String show() {
-		return "admin-itemForm";
+	public String show(Model model) {
+		return "admin/itemForm";
+	}
+	
+	@GetMapping("/update/{id}")
+	public String update(Model model, @PathVariable Integer id) {
+		model.addAttribute("item", itemsService.findOne(id));
+		return show(model);
 	}
 	
 	@PostMapping
 	public String save(@ModelAttribute("item")Items items, SessionStatus status) {
-		items.setCreatedAt(new Date());
+		if(items.getCreatedAt() == null) {
+			items.setCreatedAt(new Date());
+		}
 		itemsService.save(items);
 		status.setComplete();
-		return"redirect:/admin/itemForm";
+		return"redirect:/user/itemView";
 	}
 	
 

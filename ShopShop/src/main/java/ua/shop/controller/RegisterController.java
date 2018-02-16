@@ -11,7 +11,7 @@ public class RegisterController {
 	
 	@GetMapping
 	public String register() {
-		return "base-register";
+		return "base/register";
 	}
 	
 	@RequestMapping("/cancel")

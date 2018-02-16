@@ -36,7 +36,7 @@
 	<tiles:insertAttribute name="header"/>
 	
 	<div class="container text-center">    
-    	<div class="row content">
+    	<div class="row content text-center">
     		<tiles:insertAttribute name="sidebar"/>
     		
     		<div class="col-sm-10 text-center"> 

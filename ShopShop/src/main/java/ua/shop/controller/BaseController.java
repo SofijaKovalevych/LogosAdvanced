@@ -15,7 +15,7 @@ public class BaseController {
 	@GetMapping("/")
 	public String showHome(Model model) {
 		
-		return "base-home";
+		return "base/home";
 	}
 
 	@GetMapping("/info")
@@ -27,7 +27,7 @@ public class BaseController {
 			items.add(fuck);
 		}
 		model.addAttribute("be", items);
-		return "base-info";
+		return "base/info";
 	}
 	
 }

@@ -18,7 +18,7 @@ public class UserItemViewController {
 	@GetMapping
 	public String show(Model model) {
 		model.addAttribute("items", itemsService.findAll());
-		return "user-itemView";
+		return "user/itemView";
 	}
 
 }

@@ -8,8 +8,9 @@
 		<div class="row">
 				<div class="col-md-2">Date</div>
 				<div class="col-md-2">Title</div>
-				<div class="col-md-6">Description</div>
+				<div class="col-md-4">Description</div>
 				<div class="col-md-2">Price</div>
+				<div class="col-md-2">Edit</div>
 			</div>
 		<c:forEach items="${items}" var="item">
 			<div class="row" id="itemHover">
@@ -18,8 +19,9 @@
 						pattern="yyyy-MM-dd HH:mm" />
 				</div>
 				<div class="col-md-2">${item.title}</div>
-				<div class="col-md-6">${item.description}</div>
+				<div class="col-md-4">${item.description}</div>
 				<div class="col-md-2">${item.price} $</div>
+				<div class="col-md-2"><a href="/admin/itemForm/update/${item.id}" class="btn btn-warning">Edit</a></div>
 			</div>
 		</c:forEach>
 	</div>

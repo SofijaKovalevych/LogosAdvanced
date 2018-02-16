@@ -11,7 +11,7 @@ public class LoginController {
 	
 	@GetMapping
 	public String login() {
-		return "base-login";
+		return "base/login";
 	}
 
 }
