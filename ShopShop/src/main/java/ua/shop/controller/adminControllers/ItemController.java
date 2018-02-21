@@ -50,5 +50,11 @@ public class ItemController {
 		return"redirect:/user/itemView";
 	}
 	
+	@GetMapping("/delete/{itemId}")
+	public String delete(@PathVariable("itemId") Integer id) {
+		itemsService.delete(id);
+		return "redirect:/user/itemView";
+	}
+	
 
 }
